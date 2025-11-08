@@ -22,3 +22,30 @@ python unit_converter.py temperature 100 C F
 python unit_converter.py currency 100 USD INR
 # Output: 100 USD = 8300.00 INR
 ```
+
+### 2. TODO List Manager
+
+A command-line TODO list application with beautiful formatting using the Rich library.
+
+**Installation:**
+
+```bash
+pip install rich
+```
+
+#### Usage Examples:
+
+```bash
+# Add tasks
+python todo.py add "Finish Python project"
+python todo.py add "Push to GitHub"
+
+# List tasks
+python todo.py list
+
+# Mark a task done
+python todo.py done 1
+
+# Delete a task
+python todo.py delete 2
+```
