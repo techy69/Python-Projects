@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
 """
 Unit Converter - A versatile converter for length, temperature, and currency
-Author: Piyush Chaubey (techy69)
-B.C.A Student (2024-27) | UPES
 """
 
 import sys
