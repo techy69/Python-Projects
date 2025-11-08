@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
 """
 TODO List Manager - A simple command-line TODO list application
-Author: Piyush Chaubey (techy69)
-B.C.A Student (2024-27) | UPES
 """
 
 import sys
