@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.3
+validators==0.20.0
+=======
+rich
+>>>>>>> 5f5498a4d3d637182f9d03095a82af6a0ef13781

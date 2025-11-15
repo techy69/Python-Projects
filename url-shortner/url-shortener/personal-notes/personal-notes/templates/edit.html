@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}Edit Note - Personal Notes{% endblock
+%} {% block content %}
+<h2>Edit Note</h2>
+<form method="post">
+  <label>Title</label>
+  <input type="text" name="title" value="{{ note.title }}" required />
+  <label>Body</label>
+  <textarea name="body" rows="8">{{ note.body }}</textarea>
+  <div class="actions">
+    <button class="btn" type="submit">Update</button>
+    <a href="{{ url_for('view_note', note_id=note.id) }}" class="btn alt"
+      >Cancel</a
+    >
+  </div>
+</form>
+{% endblock %}

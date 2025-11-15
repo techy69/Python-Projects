@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Stats for {{ link.short_code }}{%
+endblock %} {% block content %}
+<h2>Stats for <code>{{ link.short_code }}</code></h2>
+<p>
+  Original URL: <a href="{{ link.original_url }}">{{ link.original_url }}</a>
+</p>
+<p>Total clicks: {{ total }}</p>
+{% if clicks %}
+<table>
+  <thead>
+    <tr>
+      <th>When</th>
+      <th>Referrer</th>
+      <th>User Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in clicks %}
+    <tr>
+      <td>{{ c.timestamp }}</td>
+      <td>{{ c.referrer or '-' }}</td>
+      <td
+        style="
+          max-width: 480px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        "
+      >
+        {{ c.user_agent or '-' }}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>No clicks yet.</p>
+{% endif %}
+<p><a href="{{ url_for('index') }}">Back</a></p>
+{% endblock %}
