@@ -108,3 +108,74 @@ personal-notes/
 ├── static/style.css    # Stylesheet
 └── templates/          # HTML templates
 ```
+
+### 4. URL Shortener - Flask Web Application
+
+A Flask-based URL shortener that allows users to create short, memorable links for long URLs. Features include custom alias support, click tracking, and a clean web interface.
+
+**Features:**
+- Shorten long URLs to compact links
+- Custom alias support for personalized short URLs
+- Click tracking and analytics
+- SQLite database for URL storage
+- Responsive web design
+- URL validation and duplicate checking
+
+**Tech Stack:** Flask 2.3.2, Flask-SQLAlchemy 3.0.3, SQLite3, HTML/CSS, Jinja2
+
+**Installation:**
+
+```bash
+# Navigate to the url-shortner directory
+cd url-shortner
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On Linux/Mac:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python app.py
+# Access at http://127.0.0.1:5000
+```
+
+**Usage Examples:**
+
+```bash
+# Create a short URL
+- Enter long URL in the input field
+- Optionally provide a custom alias
+- Click "Shorten" button
+- Copy the generated short URL
+
+# Access shortened URL
+- Visit http://127.0.0.1:5000/[short_code]
+- Automatically redirects to original URL
+- Click count is tracked
+
+# View all URLs
+- Homepage displays all shortened URLs
+- Shows original URL, short code, and click count
+```
+
+**Project Structure:**
+
+```
+url-shortner/
+├── app.py              # Main Flask application
+├── models.py           # Database models
+├── static/             # CSS and static files
+│   └── style.css       # Stylesheet
+├── templates/          # HTML templates
+│   ├── index.html      # Homepage
+│   └── error.html      # Error page
+├── requirements.txt    # Python dependencies
+└── urls.db            # SQLite database (auto-created)
+```
