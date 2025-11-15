@@ -49,3 +49,62 @@ python todo.py done 1
 # Delete a task
 python todo.py delete 2
 ```
+
+### 3. Personal Notes - Flask Web Application
+
+A lightweight personal notes management system built with Flask and SQLite. Full CRUD (Create, Read, Update, Delete) functionality with a clean, responsive web interface.
+
+**Features:**
+- Create, view, edit, and delete notes
+- SQLite database for local storage
+- Flash messages for user feedback
+- Responsive design with modern UI
+- MVC architecture implementation
+
+**Tech Stack:** Flask 2.3.2, Flask-SQLAlchemy 3.0.3, SQLite3, HTML/CSS, Jinja2
+
+**Installation:**
+
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python app.py
+# Access at http://127.0.0.1:5000
+```
+
+**Usage Examples:**
+
+```bash
+# Create a new note
+- Click "+ New Note" button
+- Enter title and body content
+- Click "Save"
+
+# View all notes
+- Homepage displays all notes sorted by last updated
+
+# Edit a note
+- Click on note title to view
+- Click "Edit" button
+- Modify content and click "Update"
+
+# Delete a note
+- Open the note
+- Click "Delete" button
+- Confirm deletion
+```
+
+**Project Structure:**
+```
+personal-notes/
+├── app.py              # Main Flask application
+├── models.py           # Database models
+├── static/style.css    # Stylesheet
+└── templates/          # HTML templates
+```
