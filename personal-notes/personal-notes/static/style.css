@@ -1,0 +1,110 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial;
+  margin: 0;
+  color: #222;
+}
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+header {
+  background: #f7f7f8;
+  padding: 12px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+h1 {
+  margin: 0;
+  display: inline-block;
+}
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #2b6cb0;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.btn.alt {
+  background: #e6e6e6;
+  color: #333;
+}
+.btn.danger {
+  background: #e55353;
+}
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+.notes-list li {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eee;
+}
+.note-link {
+  display: block;
+}
+.muted {
+  color: #666;
+  font-size: 0.9rem;
+}
+.flashes {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.flash {
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.flash.success {
+  background: #e6fffa;
+  color: #065f46;
+}
+.flash.info {
+  background: #ebf8ff;
+  color: #0c4a6e;
+}
+.flash.warning {
+  background: #fff7ed;
+  color: #92400e;
+}
+.flash.error,
+.flash.danger {
+  background: #fff1f2;
+  color: #9f1239;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+.actions {
+  margin-top: 12px;
+}
+footer {
+  margin-top: 40px;
+  padding: 10px 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
